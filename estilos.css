@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+    background:#0b0f19;
+    padding:25px 60px;
+    
+}
+
+.logo{
+    color:white;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#00bfff;
+}
+
+
+/* MENU */
+
+nav{
+    background:#111827;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:20px 30px;
+    display:block;
+    transition:0.3s;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    background:#00bfff;
+}
+
+/* BANNER */
+
+.banner{
+    position:relative; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+      animation: cambiar  6s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0% , 20%{background-image:url(img/slide1.jpeg);}
+	25% , 45%{background-image:url(img/slide2.jpeg);}
+    50%, 70%{background-image: url(img/slide4.jpeg);}
+	75% , 95%{background-image:url(img/WhatsApp\ Image\ 2026-05-22\ at\ 10.07.29\ PM.jpeg);}
+	100%{background-image:url(img/slide3.jpeg);}
+}
+.banner img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    filter:brightness(50%);
+   
+}
+
+
+.texto-banner{
+    position:absolute;
+    top:35%;
+    left:8%;
+    color:white;
+}
+
+.texto-banner h1{
+    font-size:65px;
+    width:700px;
+    margin-bottom:20px;
+}
+
+.texto-banner p{
+    font-size:25px;
+    margin-bottom:25px;
+}
+
+.boton{
+    display:inline-block;
+    background:#00bfff;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* INFO */
+
+.info{
+    width:90%;
+    margin:auto;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    margin-top:-50px;
+    position:relative;
+    border-radius:10px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.info-box{
+    text-align:center;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+.titulo h2{
+    font-size:40px;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    width:90%;
+    margin:auto;
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    padding-bottom:60px;
+    align-items:center;
+    
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    width:350px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 230px;
+    object-fit:contain;
+}
+
+.card-contenido{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.card p{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.precio{
+    color:#00bfff;
+    font-size:30px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:40px;
+    margin-top:40px;
+    border-radius:10px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:12px;
+    margin-bottom:15px;
+}
+
+button{
+    background:#00bfff;
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b0f19;
+    color:white;
+    padding:40px;
+}
+
+.footer-contenido{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .contenedor{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .texto-banner h1{
+        font-size:40px;
+        width:100%;
+    }
+
+    .info{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .formulario{
+        width:90%;
+    }
+
+}
+#bottom ul li ul li:first-child{
+	background:url(../img/facebook.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul li:nth-child(2){
+	background:url(../img/iconoGoogle.jpg);
+	background-size:cover;
+	}
+	
+
+	
