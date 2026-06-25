@@ -1,106 +1,159 @@
-/* Estilos generales */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+header{
+    background: #00509d;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inicio{
+    font-size: 24px;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
 .contenedor{
-    width:90%;
-    margin:auto;
+    flex: 1;
+    display: flex;
+    background: linear-gradient(135deg, #e8f2ff 0%, #f8fbff 100%);
+  
 }
-
-/* Barra de navegación */
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#2c3e50;
-    padding:15px 30px;
-}
-
-.logo h2{
-    color:white;
-    margin:0;
-}
-
 .menu{
-    display:flex;
-    list-style:none;
-    gap:20px;
+    width: 250px;
+    background: skyblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.menu h2{
+    margin-bottom: 15px;
+}
+.menu a{
+    text-decoration: none;
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu a:hover{
+    background: cornflowerblue;
+}
+footer{
+    background: #00296b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+.misredes{
+    display: flex;
+    gap: 15px;
+}
+.misredes a{
+    color: white;
+    text-decoration: none;
+}
+.page-title{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00296b;
 }
 
-.menu li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+.milogotipo {
+    height: 60px; /* Ajusta la altura a tu gusto */
+    width: 80px;  /* Evita que la imagen se deforme */
 }
+/* --- ESTILOS GENERALES --- */
 
-.menu li a:hover{
-    color:#f1c40f;
+.cabecera {
+text-align: center;
+margin-bottom: 40px;
 }
-
-/* Grid */
-
-.contenido{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    margin-top:30px;
-}
-
-/* Tarjetas */
-
-.tarjeta{
-    background:white;
-    padding:25px;
-    text-align:center;
-    border-radius:10px;
-    box-shadow:0 4px 8px rgba(0,0,0,.2);
-
-    transition:0.4s;
-}
-
-.tarjeta:hover{
-    background:#3498db;
-    color:white;
-    transform:translateY(-10px);
-}
-
-/* Tablet */
-
-@media(max-width:992px){
-
-    .contenido{
-        grid-template-columns:repeat(2,1fr);
-    }
+/* ==========================================
+CONTENIDO 3.9: ESTRUCTURA CON CSS GRID
+========================================== */
+.grid-proyectos {
+display: grid;
+/* Creamos 4 columnas exactamente iguales utilizando fracciones (fr) */
+grid-template-columns: 1fr 1fr 1fr 1fr;
+/* Espaciado de separación limpia entre las tarjetas */
+gap: 25px;
 
 }
+/* Estilos base de las tarjetas hijas */
+.tarjeta {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 12px;
+text-align: center;
 
-/* Celular */
+border: 1px solid #e2e8f0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+/* ==========================================
+CONTENIDO 3.10: ANIMACIÓN (TRANSICIÓN)
+========================================== */
+/* Le indicamos a la tarjeta que cualquier cambio visual dure 0.3 segundos de forma
+suave */
+transition:
+transform 0.3s ease,
+box-shadow 0.3s ease,
+background-color 0.3s ease;
+}
+.tarjeta .icono {
+font-size: 40px;
+margin-bottom: 15px;
+}
+.tarjeta h3 {
+color: #005088; /* Azul institucional */
+margin-bottom: 10px;
+}
+/* Efecto interactivo al pasar el cursor por encima de la tarjeta */
+.tarjeta:hover {
+transform: translateY(-10px); /* Eleva la tarjeta sutilmente hacia arriba */
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); /* Intensifica la sombra */
+background-color: #f8fafc; /* Cambia ligeramente el tono de fondo */
+cursor: pointer;
+border-color: blue;
+}
+/* ==========================================
+CONTENIDO 3.11: RESPONSIVE DESIGN (MEDIA QUERIES)
+========================================== */
+/* CONFIGURACIÓN PARA TABLETS (Pantallas menores a 992px de ancho) */
+@media (max-width: 992px) {
+.grid-proyectos {
+/* Reducimos de 4 columnas a solo 2 columnas */
+grid-template-columns: 1fr 1fr;
+}
+}
+/* CONFIGURACIÓN PARA CELULARES (Pantallas menores a 600px de ancho) */
+@media (max-width: 600px) {
+.grid-proyectos {
 
-@media(max-width:600px){
-
-    .contenido{
-        grid-template-columns:1fr;
-    }
-
-    .navbar{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .menu{
-        flex-direction:column;
-        width:100%;
-        padding-left:0;
-        margin-top:15px;
-    }
-
-    .menu li{
-        margin:8px 0;
-    }
-
+/* Reducimos la rejilla a 1 sola columna vertical */
+grid-template-columns: 1fr;
+gap: 15px; /* Achicamos la separación para aprovechar pantalla */
+}
+body {
+padding: 10px; /* Reducimos el margen del cuerpo en móviles */
+}
 }
