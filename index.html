@@ -1,250 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="normalize.css">
 
-<title>COMPUTECH</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos1.css">
 
-<link rel="stylesheet" href="estilos.css">
-
+    <title>Dashboard del Estudiante</title>
 </head>
 <body>
 
-<header>
+<div class="contenedor">
 
-    <div class="logo">
-        EL MUNDO DE <span>LAS COMPUTADORAS</span>
-    </div>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Mi Dashboard</h2>
+            </div>
 
-</header>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Notas</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
+    <!-- Contenido -->
+    <main class="contenido">
 
-<ul>
+        <div class="tarjeta">
+            <h3>Matemática</h3>
+            <p>Nota: 95</p>
+        </div>
 
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="productos.html">Productos</a></li>
-    <li><a href="laptops.html">Laptops</a></li>
-    <li><a href="gamers.html">PC Gamer</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
+        <div class="tarjeta">
+            <h3>Programación</h3>
+            <p>Nota: 98</p>
+        </div>
 
-</ul>
+        <div class="tarjeta">
+            <h3>Base de Datos</h3>
+            <p>Nota: 90</p>
+        </div>
 
-</nav>
+        <div class="tarjeta">
+            <h3>Diseño Web</h3>
+            <p>Nota: 100</p>
+        </div>
 
-<section class="banner">
-
-
-
-<div class="texto-banner">
-
-<h1>TECNOLOGÍA DE ÚLTIMA GENERACIÓN</h1>
-
-<p>
-Venta de computadoras, laptops y accesorios.
-</p>
-
-
-
-</div>
-
-</section>
-
-<section class="info">
-
-<div class="info-box">
-
-<h3> Ofrecemos Equipos de Calidad</h3>
-
-<p>
- Con las mejores y mas actualizadas computadoras y laptops del mercado en este 
- momento .
-</p>
+    </main>
 
 </div>
-
-<div class="info-box">
-
-<h3> Ofrecemos equipos con Garantía</h3>
-
-<p>
-Todos nuestros productos ofrecen una  garantía para garantizar 
-la comfianza de nuestros clientes .
-</p>
-
-</div>
-
-<div class="info-box">
-
-<h3> Realizamos Envíos</h3>
-
-<p>
-Realizamos envíos con confianza y garantia con tal
-de ofrecer un servicio bueno al cliente  a todo el país.
-</p>
-
-</div>
-
-</section>
-
-<section class="titulo">
-
-<h2>CATEGORÍAS DESTACADAS</h2>
-
-</section>
-
-<section class="contenedor">
-
-<div class="card">
-
-<img src="img/computadoramoderna.jpeg">
-
-<div class="card-contenido">
-
-<h3>Computadoras de Oficina</h3>
-
-<p>Intel Core i5</p>
-<p>16GB RAM</p>
-<p>SSD 512GB</p>
-
-<div class="precio">
-$850
-</div>
-
-
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="img/laptop.jpeg">
-
-<div class="card-contenido">
-
-<h3>Laptops Modernas</h3>
-
-<p>Ryzen 7</p>
-<p>16GB RAM</p>
-<p>SSD 1TB</p>
-
-<div class="precio">
-$1200
-</div>
-
-
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="img/pcgamer.jpeg">
-
-<div class="card-contenido">
-
-<h3>PC Gamer RGB</h3>
-
-<p>RTX 4070</p>
-<p>32GB RAM</p>
-<p>SSD 2TB</p>
-
-<div class="precio">
-$2400
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-<header class="cabecera">
-<h1>Galería de Proyectos Tecnológicos</h1>
-<p>Módulo CSS Avanzado - Licenciado. Felix Maldonado A.</p>
-</header>
-<main class="contenedor-principal">
-<section class="grid-proyectos">
-<div class="tarjeta">
-<div class="icono">💻</div>
-<h3>Desarrollo Web</h3>
-<p>Construcción de sitios interactivos con HTML, CSS y JS nativo.</p>
-</div>
-<div class="tarjeta">
-<div class="icono">📱</div>
-<h3>Apps Móviles</h3>
-<p>Diseño de interfaces intuitivas y fluidas para smartphones.</p>
-</div>
-<div class="tarjeta">
-<div class="icono">📊</div>
-<h3>Base de Datos</h3>
-<p>
-Modelado y administración estructurada de información institucional.
-</p>
-
-</div>
-<div class="tarjeta">
-<div class="icono"> 🤖</div>
-<h3>Inteligencia Artificial</h3>
-<p>
-Integración de asistentes y modelos para automatización de código.
-</p>
-</div>
-<div class="tarjeta">
-<div class="icono"> 🌐</div>
-<h3>Ciberseguridad</h3>
-<p>
-Conjuntos de practicas y tecnologias diseñadas para poder
-proteger redes dispositivos y programas contra ataques ajenos
-</p>
-</div>
-<div class="tarjeta">
-<div class="icono"> 🚀</div>
-<h3>Cloud Computing</h3>
-<p>
-Es la entrega de servicios informaticos como ser almacenamineto servidores
-bases de datos y software a travez de internet 
-</p>
-</div>
-</section>
-</main>
-<footer>
-
-<div class="footer-contenido">
-
-<div>
-
-<h3>COMPUTECH</h3>
-
-<p>Tu tienda de tecnología mas confiable segura.</p>
-
-</div>
-
-<div>
-
-<h3>Nuestras Redes Sociales </h3>
-
-<a href="http://www.facebook.com"><img  src="img/facebook.jpg" alt=""> </a>
-<a href="http://www.google.com"><img src="img/iconoGoogle.jpg" alt=""></a>
-<a href="http://www.twitter.com"><img src="img/iconoTwitter.jpg" alt=""></a>
-</div>
-
-<div>
-
-<h3>Contacto</h3>
-
-<p>vsebastian-sif@itpm.edu.bo</p>
-<p>+591 70680058</p>
-
-</div>
-
-</div>
-
-</footer>
 
 </body>
 </html>
